@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   
+}
+
+body{
+    background-color: #fcfcfc;
+}
+
+header{
+   
+}
+ .navBarImage{
+    font-weight: 200px;
+    display: flex;
+    justify-content: center;
+    height: 100px;
+    background-color: rgb(238, 219, 231);
+    padding: 15px 0;
+ }
+
+ul{
+   display: flex;
+   padding: 30px;
+   list-style: none;
+   gap: 24px;
+}
+
+
+ul li a{
+   justify-content: space-between;
+   color: #242121;
+   text-decoration: none; 
+}
+
+a{
+   box-sizing: border-box 10px;
+   border: 1px solid #c78d8d;
+   padding: 10px;
+   background-color: #e0b1b1;
+   border-radius: 10px;
+}
+
+src{
+   
+}
