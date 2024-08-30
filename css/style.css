@@ -77,6 +77,10 @@ nav ul li:hover{
    display: none;
 }
 
+header{
+   background-image: radial-gradient(#e884d7, #59c8ce);
+}
+
 .header-bottom-side{
    display: flex;
    align-items: center;
@@ -84,25 +88,35 @@ nav ul li:hover{
    padding: 1rem;
 }
 
+.header-bottom-side-left{
+   height: 100%;
+   flex-basis: 50%;
+}
 .header-bottom-side-left h2{
    font-size: 3.2rem;
    margin-bottom: 1.5rem;
 }
 
 .header-bottom-side-left p{
-   background-color: blueviolet;
+   line-height: 1.5rem;
+   margin-bottom: 1.5rem;
+}
+
+.header-bottom-side-left button{
+   background-color:brown;
    border: none;
    cursor: pointer;
    padding: 0.8rem 3.8rem;
    border-radius: 9999px;
-   color: white;
+   color: aqua;
    font-weight: 500;
    font-size: 1rem;
+   transition: all 0.2s;
+
 }
 
-.header-bottom-side-left{
-   height: 100%;
-   flex-basis: 50%;
+.header-bottom-side-left button:hover{
+   background-color:rgb(19, 80, 80);
 }
 
 .header-bottom-side-right{
@@ -113,6 +127,5 @@ nav ul li:hover{
 }
 
 .header-bottom-side-right img{
-   width: 115%;
-   margin 0 auto:
+   width: 25%;
 }
