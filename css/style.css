@@ -3,12 +3,15 @@
    box-sizing: border-box;
    padding: 0;
    margin: 0;
+   width: 100%;
 }
 
 
 body{
    font-family: 'arial';
 }
+
+
 
 .header-inner-content{
    max-width: 1300px;
@@ -77,6 +80,12 @@ nav ul li:hover{
    display: none;
 }
 
+button{
+   padding: 10px 15px;
+   gap: 10%;
+   width: 150px;
+}
+
 header{
    background-image: radial-gradient(#e884d7, #59c8ce);
 }
@@ -103,12 +112,12 @@ header{
 }
 
 .header-bottom-side-left button{
-   background-color:brown;
+   background-color:rgb(216, 141, 206);
    border: none;
    cursor: pointer;
    padding: 0.8rem 3.8rem;
    border-radius: 9999px;
-   color: aqua;
+   color: rgb(0, 0, 0);
    font-weight: 500;
    font-size: 1rem;
    transition: all 0.2s;
@@ -116,7 +125,7 @@ header{
 }
 
 .header-bottom-side-left button:hover{
-   background-color:rgb(19, 80, 80);
+   background-color:rgb(168, 88, 141);
 }
 
 .header-bottom-side-right{
@@ -127,5 +136,91 @@ header{
 }
 
 .header-bottom-side-right img{
-   width: 25%;
+   display: flex;
+   width: 55%;
+   padding: 100px 15px;
+   justify-items: right;
+}
+
+
+/* Media Queries */
+@media(max-width: 800px){
+   .logo{
+      font-size: 1.2rem;
+   }
+
+
+   .header-bottom-side{
+      flex-direction: column;
+      text-align: center;
+      padding-top: 4rem;
+   }
+
+   nav{
+      position: absolute;
+      background-color: #e884d7;
+      width: 100%;
+      top: 46px;
+      display: none;
+   }
+
+   .show-menu nav{
+      display:block;
+      
+   }
+
+   nav ul{
+      flex-direction: column;
+   }
+
+   nav ul li{
+      text-align: center;
+      padding: 0.8rem;
+   }
+}
+
+
+
+/* Header */
+
+
+/* main content */
+
+.pink-background{
+background-color: #a15795;
+}
+
+.page-inner-content{
+   max-width: 1280px;
+   margin: 0 auto;
+}
+
+.cols{
+   display: grid;
+   align-items: center;
+   justify-content: space-evenly;
+   padding: 4rem 1rem;
+}
+
+.cols-3{
+   grid-template-columns: repeat(3, 1fr);
+   gap: 3rem;
+}
+
+cols-3 img{
+   max-width: 100%;
+}
+
+.cols-4{
+   grid-template-columns: repeat(4, 1fr);
+   gap: 1rem;
+}
+
+.cols>*{
+   cursor: pointer;
+   transition: all 0.2s;
+}
+
+.cols>*:hover{
+   transform: translateX(-5px);
 }
