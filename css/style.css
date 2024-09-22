@@ -8,7 +8,7 @@
 
 body{
    font-family: 'arial';
-   background-image: radial-gradient(#f0a3b9, #ffffff)
+   background-image:#ffd5e4;
 }
 
 
@@ -36,9 +36,8 @@ body{
    transition: 1,9s;
 }
 
-.slide img{
-   width: 800px;
-}
+
+
 
 
 #radio1:checked ~ .first{
@@ -78,9 +77,9 @@ body{
 
 
 .navbar{
+   position: sticky;
    background-color: #f7cfe0;
    padding: 1rem;
-   position: sticky;
    top: 0;
    box-shadow: #f1a7c6;
    z-index: 99;
@@ -276,7 +275,7 @@ background-color: #e4cfe1;
 /* Media Queries */
 @media(max-width: 800px){
    .logo{
-      font-size: 1.2rem;
+      font-size: 1.5rem;
    }
 
    .menu-button{
@@ -286,14 +285,14 @@ background-color: #e4cfe1;
    .header-bottom-side{
       flex-direction: column;
       text-align: center;
-      padding-top: 4rem;
+      padding-top: 5rem;
    }
 
    nav{
       position: absolute;
-      background-color:#f5bad3;
+      background-color:#f6cdde;
       width: 100%;
-      top: 46px;
+      top: 100%;
       display: none;
    }
 
@@ -308,7 +307,7 @@ background-color: #e4cfe1;
 
    nav ul li{
       text-align: center;
-      padding: 0.8rem;
+      padding: 0.1rem
    }
 }
 
@@ -324,7 +323,7 @@ main{
 }
 
 .pink-background{
-background-color: #e4cfe1;
+background-color: #ffd5e4;
 }
 
 .page-inner-content{
