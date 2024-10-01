@@ -14,10 +14,10 @@ body{
 
 .slider{
    margin: 0 auto;
-   width: 800px;
-   height: 500px;
+   width: 100%;
    overflow: hidden;
-   padding-top: 10px
+   background-color: #df2676;
+   margin-top: 10px
 }
 
 .slides{
@@ -28,6 +28,12 @@ body{
 
 .slides input{
    display: none;
+}
+
+.slide img {
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
 }
 
 .slide{
